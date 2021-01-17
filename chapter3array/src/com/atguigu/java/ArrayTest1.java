@@ -43,6 +43,18 @@ public class ArrayTest1 {
         }
         System.out.println("*********");
 
+        //二维数组的动态初始化1
+        String[][] arr2 = new String[3][2];
+        //二维数组初始化1的初始化默认值
+        System.out.println(arr2[0]);//[Ljava.lang.String;@1b6d3586  地址值
+        System.out.println(arr2[0][1]);//null  与一维数组的初始化值相同
+        System.out.println("*********");
+
+        //二维数组的动态初始化2
+        String[][] arr3 = new String[3][];
+        //二维数组初始化2的初始化默认值
+        System.out.println(arr3[0]);//null
+        System.out.println(arr3[0][1]);  //空指针异常
 
     }
 }
